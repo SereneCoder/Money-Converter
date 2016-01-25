@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+     tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/moneybg"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:id="@+id/convertButton"
+        android:layout_marginBottom="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ff11a92d"
+        android:textColor="#ffe8f4e5"
+        android:layout_alignLeft="@+id/canadianAmount"
+        android:layout_alignStart="@+id/canadianAmount"
+        android:layout_alignRight="@+id/canadianAmount"
+        android:layout_alignEnd="@+id/canadianAmount"
+        android:onClick="convert" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CAD to USD"
+        android:id="@+id/canadianAmount"
+        android:layout_marginTop="39dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#ffeaeaea"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/dollarField"
+        android:layout_above="@+id/convertButton"
+        android:layout_alignRight="@+id/convertButton"
+        android:layout_alignEnd="@+id/convertButton"
+        android:layout_marginBottom="105dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter dollar amount below"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff4f4f4"
+        android:textSize="25sp" />
+
+</RelativeLayout>
